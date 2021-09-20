@@ -8,6 +8,9 @@ import { HelppageComponent } from './helppage/helppage.component';
 import { ProfileComponent } from './profile/profile.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { GpsComponent } from './gps/gps.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { FeedComponent } from './feed/feed.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { GpsComponent } from './gps/gps.component';
     HelppageComponent,
     ProfileComponent,
     OrganizationComponent,
-    GpsComponent
+    GpsComponent,
+    HomePageComponent,
+    FeedComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
