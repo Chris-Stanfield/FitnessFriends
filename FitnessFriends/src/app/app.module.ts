@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
 import { PostComponent } from './post/post.component';
 import { QuestionsCommentsComponent } from './questions-comments/questions-comments.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { RecentComponent } from './recent/recent.component';
+import { FeedComponent } from './feed/feed.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginSignupComponent,
     PostComponent,
-    QuestionsCommentsComponent
+    QuestionsCommentsComponent,
+    FeedbackComponent,
+    RecentComponent,
+    FeedComponent
   ],
   imports: [
     BrowserModule,
