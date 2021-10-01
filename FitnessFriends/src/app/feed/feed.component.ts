@@ -1,15 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+export function hello_world(){
 
-@Component({
-  selector: 'app-feed',
-  templateUrl: './feed.component.html',
-  styleUrls: ['./feed.component.css']
-})
-export class FeedComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+	console.log("hello world");
 }
+
+hello_world()
