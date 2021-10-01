@@ -1,9 +1,9 @@
 
-export function hello_world() {
+export function hello() {
 
-    console.log("Hello World")
-    return "hello World";
+    console.log("Hello from home page")
+    return "Hello from Home Page!";
   
 }
 
-hello_world();
+hello();
