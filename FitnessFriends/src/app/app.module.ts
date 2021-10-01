@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
 import { PostComponent } from './post/post.component';
 import { QuestionsCommentsComponent } from './questions-comments/questions-comments.component';
-import { HomePageComponent } from './home-page/home-page.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { RecentComponent } from './recent/recent.component';
+import { FeedComponent } from './feed/feed.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { HomePageComponent } from './home-page/home-page.component';
     LoginSignupComponent,
     PostComponent,
     QuestionsCommentsComponent,
-    HomePageComponent
+    FeedbackComponent,
+    RecentComponent,
+    FeedComponent
   ],
   imports: [
     BrowserModule,
