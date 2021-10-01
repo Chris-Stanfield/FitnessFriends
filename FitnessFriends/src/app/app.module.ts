@@ -9,6 +9,8 @@ import { QuestionsCommentsComponent } from './questions-comments/questions-comme
 import { FeedbackComponent } from './feedback/feedback.component';
 import { RecentComponent } from './recent/recent.component';
 import { FeedComponent } from './feed/feed.component';
+import { FilterComponent } from './filter/filter.component';
+import { PostCreatorComponent } from './post-creator/post-creator.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FeedComponent } from './feed/feed.component';
     QuestionsCommentsComponent,
     FeedbackComponent,
     RecentComponent,
-    FeedComponent
+    FeedComponent,
+    FilterComponent,
+    PostCreatorComponent
   ],
   imports: [
     BrowserModule,
