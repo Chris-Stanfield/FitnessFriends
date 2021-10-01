@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecentComponent implements OnInit {
 
+
   constructor() { }
 
+  hello_world()
+  {
+	console.log("Hello World");
+  }
+
   ngOnInit(): void {
+    this.hello_world();
   }
 
 }
