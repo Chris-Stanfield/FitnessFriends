@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class LoginSignupComponent implements OnInit {
 
   constructor() { }
+  hello_world() {
+    console.log("Hello world!");
+  }
 
   ngOnInit(): void {
+    this.hello_world();
   }
 
 }
