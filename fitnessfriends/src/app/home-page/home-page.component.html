@@ -1,14 +1,37 @@
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <title>Fitness Friends</title>
+    <meta charset="utf-8" />
+    <title>Fitness Friends</title>
+    <style>
+        .button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 4px;
+            cursor: pointer;
+        }
+        
+        .eventButton {
+            background-color: #4CAF50;
+            /* Green */
+        }
+    </style>
 </head>
 
 <body>
-  <script type="module" src="home-page.component.js"></script>
-  <script>var exports = {};</script>
-  <p>Home-Page works!</p>
-  <app-root></app-root>
+    <h1>Fitness Friends</h1>
+    <button class="button eventButton">Create event</button>
+    <script type="module" src="home-page.component.js"></script>
+    <script>
+        var exports = {};
+    </script>
+    <p>Home-Page works!</p>
+    <app-root></app-root>
 </body>
 
 </html>
