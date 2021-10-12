@@ -8,7 +8,20 @@
     <body>
         <script type = "module" src ="login-signup.component.js"></script> 
         <script> var exports = {}; </script>
-        <p>login-signup works!</p>
+        <label>Login</label>
+        <form>
+            <label for="Uname">Username:</label>
+            <input type="text">
+            <label for="Upass">Password:</label>
+            <input type="password">
+            <br>
+            <input type="submit" value="Submit">
+            <p class="form_text">
+                <a class="form_link" href="./" id="linkForgotPassword">Forgot Password</a>
+            </p>
+            <p class="form_text">
+                <a class="form_link" href="./" id="linkCreateAccount">Don't have an account? Create one here</a>
+            </p>
         <app-root></app-root>
     </body>
 
