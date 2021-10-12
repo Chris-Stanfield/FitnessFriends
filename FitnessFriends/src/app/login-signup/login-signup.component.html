@@ -6,19 +6,23 @@
     </head>
 
     <body>
-        <script type = "module" src ="login-signup.component.js"></script> 
+		<script type = "module" src ="login-signup.component.js"></script> 
         <script> var exports = {}; </script>
         <label>Login</label>
         <form>
             <label for="Uname">Username:</label>
-            <input type="text">
+            <input type="text" placeholder="Enter Username" name="Usr_name" required>
+            
             <label for="Upass">Password:</label>
-            <input type="password">
+            <input type="password" placeholder="Enter Password" name="pass" required>
+            
             <br>
+            
             <input type="submit" value="Submit">
             <p class="form_text">
                 <a class="form_link" href="./" id="linkForgotPassword">Forgot Password</a>
             </p>
+            
             <p class="form_text">
                 <a class="form_link" href="./" id="linkCreateAccount">Don't have an account? Create one here</a>
             </p>
