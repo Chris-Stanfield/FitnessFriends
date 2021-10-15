@@ -77,6 +77,10 @@ body {
     height: 100px;
 }
 
+.fa-user-circle{
+  font-size: 100px;
+}
+
 .fa-plus-square {
     /* The create event icon style  */
     font-size: 78px;
