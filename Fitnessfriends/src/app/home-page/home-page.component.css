@@ -1,0 +1,125 @@
+body {
+    background-color: purple;
+}
+
+.profile-container {
+    float: left;
+    padding: 15px;
+    width: 350px;
+}
+
+.navigation-container {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+}
+
+
+/* controls the style of each navigation button */
+
+.navigation-container div {
+    float: left;
+    padding: 15px;
+    position: relative;
+    left: 50%;
+}
+
+
+/* style for the button in the navigation conatiner */
+
+.navigation-container button:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    font-size: 70px;
+    color: greenyellow;
+}
+
+.recents {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* style for just the recent header above list of names */
+
+.recents p {
+    margin: auto;
+    text-align: center;
+}
+
+
+/* controls the style for recent  */
+
+.recents ul {
+    margin: auto;
+    text-align: center;
+}
+
+
+/* controls style for the list of names in recent */
+
+.recents ul>li {
+    margin: 0px;
+    text-align: left;
+}
+
+#eventCreate {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+.fa-plus-square {
+    /* The create event icon style  */
+    font-size: 78px;
+}
+
+.fa-search {
+    font-size: 78px;
+}
+
+.fa-comment-medical {
+    font-size: 78px;
+}
+
+#filter {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+#feedback {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+#profilePicB {
+    margin: auto;
+    padding: 0%;
+    cursor: pointer;
+}
+
+#submitB:hover {
+    margin: auto;
+    cursor: pointer;
+}
+
+.Feed {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    width: 90%;
+    height: 100%;
+    outline-style: solid;
+    text-align: center;
+    font-size: 100px;
+}
