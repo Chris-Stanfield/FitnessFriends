@@ -2,8 +2,6 @@
 ## Team Members
 Steven Katona,
 
-Nick Young,
-
 Nick Reyer,
 
 Zach Cole,
