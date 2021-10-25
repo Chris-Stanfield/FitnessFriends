@@ -1,1 +1,40 @@
-<p>create-post works!</p>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  
+</head>
+
+<body>
+  
+  <p>Activity <input type="text" id=activity><br /></p>
+  <p>Location <input type="text" id=location><br /></p>
+  <p>Gender: </p>
+
+  <form>
+    <input type="radio" id="all" name=gender value="all"><label for="all">All</label><br>
+    <input type="radio" id="male" name=gender value="male"><label for="male">Male</label><br>
+    <input type="radio" id="female" name=gender value="female"><label for="female">Female</label><br>
+    <input type="radio" id="nb" name=gender value="nonbin"><label for="nonbin">Non-Binary</label>
+
+  </form>
+
+  <p>Date <input type="date" id=date></p>
+  <p>Time <input type="time" id=starttime /><input type="time" id=endtime /><br /></p>
+  <p>Age <input type="range" id=min-age /><input type=range id=max-age /><br /></p>
+  <p>Description </p>
+
+  <!--<div ng-app="PopulateData" ng-controller="myCtrl"></div>-->
+
+  <div ng-app="" ng-init="type='sking'; location = 'location'">
+    <p> yes this {{ type }} happends at {{ location }}</p>
+  </div>
+
+  <p><input type="button" value="Create Post"></p>
+</body>
+
+
+
+</html>
