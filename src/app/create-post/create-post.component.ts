@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DummyPostMngComponent } from '../dummy-post-mng/dummy-post-mng.component';
 
 @Component({
   selector: 'app-create-post',
@@ -8,6 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class CreatePostComponent implements OnInit {
 
   constructor() { }
+
+  
+
+
+
 
   ngOnInit(): void {
   }

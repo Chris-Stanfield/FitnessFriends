@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CreatePostComponent } from './create-post/create-post.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ViewPostComponent } from './view-post/view-post.component';
+import { DummyPostMngComponent } from './dummy-post-mng/dummy-post-mng.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     ViewPostComponent,
-    CreatePostComponent
+    CreatePostComponent,
+    DummyPostMngComponent
   ],
   imports: [
     BrowserModule,
