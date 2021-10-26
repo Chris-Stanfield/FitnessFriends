@@ -6,33 +6,35 @@
     </head>
 
     <body>
-		<script type = "module" src ="login-signup.component.js"></script> 
-        <script> var exports = {}; </script>
-        <label>Login</label>
-        <form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
-            <label for="userName">Username:</label>
-            <input type="text" placeholder="Enter Username" name="userName" ngModel required>
-            
-            <label for="pass">Password:</label>
-            <input type="password" placeholder="Enter Password" name="pass" ngModel required>
-            
-            <br>
-            
-            <input type="submit" value="Submit">
-            <p class="form_text">
-                <a class="form_link" href="./" id="linkForgotPassword">Forgot Password</a>
-            </p>
-            
-            <p class="form_text">
-                <a class="form_link" href="./" id="linkCreateAccount">Don't have an account? Create one here</a>
-            </p>
-        </form>
-        
-        <div [hidden]="!itemForm.form.valid">
-            <p>{{ submitMessage }}</p>
+		<div class="row">
+            <div class="col-md-6 offset-md-3 mt-4">
+                <h3>Login</h3>
+                <form>
+                    
+                    <div class="mb-3">
+                      <label for="loginUsername" class="form-label">Username</label>
+                      <input type="text" 
+                            class="form-control" 
+                            id="loginUsername" 
+                            placeholder="Enter Username">
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label for="loginPassword" class="form-label">Password</label>
+                      <input type="password" 
+                            class="form-control" 
+                            id="loginPassword">
+                    </div>
+                    
+                    <div class="mb-3 form-check">
+                     <a [routerLink]="['/reset']">Forgot Password</a>
+                    </div>
+                    
+                    <button type="Login" class="btn btn-primary">Login</button>
+                  
+                </form>
+            </div>
         </div>
-        
-        <app-root></app-root>
     </body>
 
 </html>
