@@ -4,7 +4,11 @@
 
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-  
+  <script type="text/javascript">
+
+    function callAngularFunction() { window.angularComponentReference.zone.run(() => { window.angularComponentReference.loadAngularFunction(); }); }
+  </script>
+
 </head>
 
 <body>
@@ -26,13 +30,7 @@
   <p>Age <input type="range" id=min-age /><input type=range id=max-age /><br /></p>
   <p>Description </p>
 
-  <!--<div ng-app="PopulateData" ng-controller="myCtrl"></div>-->
-
-  <div ng-app="" ng-init="type='sking'; location = 'location'">
-    <p> yes this {{ type }} happends at {{ location }}</p>
-  </div>
-
-  <p><input type="button" value="Create Post"></p>
+  <p><input type="button" value="Create Post" onclick = "callAngularFunction();" alert ="Angular Function Called!"></p>
 </body>
 
 

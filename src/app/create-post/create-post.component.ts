@@ -1,21 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgZone } from '@angular/core';
 import { DummyPostMngComponent } from '../dummy-post-mng/dummy-post-mng.component';
+
+
 
 @Component({
   selector: 'app-create-post',
   templateUrl: './create-post.component.html',
   styleUrls: ['./create-post.component.css']
 })
-export class CreatePostComponent implements OnInit {
+export class CreatePostComponent  {
 
-  constructor() { }
+  constructor(private ngZone: NgZone,) { }
 
-  
+ 
 
-
-
-
-  ngOnInit(): void {
+  ngOnInit() {
+    (window as any).MyNameSpace = { component: this, zone: this.ngZone, loadAngularFunction: () => this.sadness(), };
   }
+  sadness() { console.log("works"); }
 
 }
