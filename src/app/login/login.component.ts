@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -11,26 +12,9 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
- /** 
-  const form: HTMLFormElement = document.querySelector('login') as HTMLFormElement;
-
-  form.onsubmit = () => {
-    const formData = new FormData(form);
-
-    const userName = formData.get('userName') as string;
-  
-    const pass = formData.get('pass') as string;
-
-    if (auth(userName, pass)){
-      Route to login page
-    }
-    else{
-      Return error
-    }
-
-
-    return false;
+  onSubmit(f: NgForm) {
+    console.log(f.value);  // { first: '', last: '' }
+    console.log(f.valid);  // false
   }
-}
-*/
+
 }
