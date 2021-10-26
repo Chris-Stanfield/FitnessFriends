@@ -9,12 +9,12 @@
 		<script type = "module" src ="login-signup.component.js"></script> 
         <script> var exports = {}; </script>
         <label>Login</label>
-        <form id='login'>
-            <label for="Uname">Username:</label>
-            <input type="text" placeholder="Enter Username" name="userName" required>
+        <form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
+            <label for="userName">Username:</label>
+            <input type="text" placeholder="Enter Username" name="userName" ngModel required>
             
-            <label for="Upass">Password:</label>
-            <input type="password" placeholder="Enter Password" name="pass" required>
+            <label for="pass">Password:</label>
+            <input type="password" placeholder="Enter Password" name="pass" ngModel required>
             
             <br>
             
@@ -26,6 +26,12 @@
             <p class="form_text">
                 <a class="form_link" href="./" id="linkCreateAccount">Don't have an account? Create one here</a>
             </p>
+        </form>
+        
+        <div [hidden]="!itemForm.form.valid">
+            <p>{{ submitMessage }}</p>
+        </div>
+        
         <app-root></app-root>
     </body>
 
