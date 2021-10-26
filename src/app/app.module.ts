@@ -11,7 +11,6 @@ import { LoginComponent } from './login/login.component';
 import { ViewPostComponent } from './view-post/view-post.component';
 import { SignupComponent } from './signup/signup.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
-import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
