@@ -1,0 +1,51 @@
+<!--Nicklaus Reyer-->
+<html lang="en">
+    <head>
+	    <meta charset="utf-8" />
+	    <title>Fitness Friends</title>
+    </head>
+
+    <body>
+		<div class="row">
+            <div class="col-md-6 offset-md-3 mt-4">
+                <h3>Login</h3>
+                <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+                    
+                    <div class="form-group">
+                      <label for="loginUsername" class="form-label">Username</label>
+                      <input type="text" 
+                        name="username"
+                        ngModel
+                        required
+                        #username="ngModel"
+                        class="form-control"
+                        id="loginUsername"
+                        placeholder="Enter username">
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="loginPassword" class="form-label">Password</label>
+                      <input type="password" 
+                        name="password"
+                        ngModel
+                        required
+                        #password="ngModel"
+                        class="form-control"
+                        id="loginPassword"
+                        placeholder="Password">
+                    </div>
+                    
+                    <div class="form-group form-check">
+                     <a [routerLink]="['/reset']">Forgot Password</a>
+                    </div>
+                    
+                    <button type="Login"
+                        [disabled]="f.invalid" 
+                        class="btn btn-primary">Login</button>
+                  
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
