@@ -12,4 +12,8 @@ export class ViewPostComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public sum(a: number, b: number): number {
+    return a+b;
+  }
+
 }
