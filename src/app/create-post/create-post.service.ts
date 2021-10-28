@@ -4,8 +4,6 @@ import { NgForm } from '@angular/forms';
 
 export class CreatePostService
 {
-  getActiv() { return ["Skiing", "Jogging", "Swimming", "Eating"]}
+  getActiv() { return ["Skiing", "Jogging", "Swimming", "Eating"] }
 
-
-  
 }
