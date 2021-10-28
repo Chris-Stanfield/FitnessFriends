@@ -11,15 +11,16 @@
 
     <div class=top-bar>
         <div class="profile-container">
-            <img class="fas fa-user-circle" src="" id="img-preview">
+            <!--<fa-icon [icon]="['fas', 'images']"></fa-icon>-->
+            <img src="" id="img-preview">
             <p id="username">Chris Stanfield</p>
             <input type="file" id="profilePicB" name="filename">
         </div>
 
         <div class="navigation-container">
-            <div><button type="button" id="eventCreate"><i class="far fa-plus-square"></i></button></div>
-            <div><button type="button" id="filter"><i class="fas fa-search"></i></button></div>
-            <div><button type="button" id="feedback"><i class="fas fa-comment-medical"></i></button></div>
+            <div><a routerLink="/createpost" id="eventCreate"><!--<i class="far fa-plus-square"></i>-->Create Post</a></div>
+            <div><a routerLink="/filter" id="filter"><i class="fas fa-search">Filter</i></a></div>
+            <div><a routerLink="/feedback" id="feedback"><i class="fas fa-comment-medical">Feedback</i></a></div>
             <div class="recents">
                 <p><b><u>Recent</u></b></p>
                 <ul class="recentNames">

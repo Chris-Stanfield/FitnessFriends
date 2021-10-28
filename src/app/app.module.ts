@@ -11,6 +11,11 @@ import { LoginComponent } from './login/login.component';
 import { ViewPostComponent } from './view-post/view-post.component';
 import { SignupComponent } from './signup/signup.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faUserCircle, fas } from '@fortawesome/free-solid-svg-icons';
+import { FilterComponent } from './filter/filter.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+
 
 @NgModule({
   declarations: [
@@ -20,15 +25,23 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
     CreatePostComponent,
     LoginComponent,
     SignupComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    FilterComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AuthModule,
     FormsModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(library: FaIconLibrary) {
+    library.addIconPacks(fas);
+    library.addIcons(faUserCircle);
+  }
+}
