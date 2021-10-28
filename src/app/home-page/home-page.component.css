@@ -1,4 +1,4 @@
-/*body {
+body {
     background-color: purple;
 }
 
@@ -17,20 +17,16 @@
 
 /* controls the style of each navigation button */
 
-
-/*
 .navigation-container div {
     float: left;
     padding: 15px;
     position: relative;
     left: 50%;
-} */
+}
 
 
 /* style for the button in the navigation conatiner */
 
-
-/*
 .navigation-container button:hover {
     background-color: greenyellow;
     cursor: pointer;
@@ -52,8 +48,6 @@
 
 /* style for just the recent header above list of names */
 
-
-/*
 .recents p {
     margin: auto;
     text-align: center;
@@ -62,8 +56,6 @@
 
 /* controls the style for recent  */
 
-
-/*
 .recents ul {
     margin: auto;
     text-align: center;
@@ -72,17 +64,13 @@
 
 /* controls style for the list of names in recent */
 
-
-/*
 .recents ul>li {
     margin: 0px;
     text-align: left;
 }
 
 #eventCreate {
-    display: inline-block;
     margin: auto;
-    text-align: center;
     width: 100px;
     height: 100px;
 }
@@ -93,14 +81,12 @@
     height: 100px;
 }
 
-.fa-plus-square {
+fa-plus-square {
     /* The create event icon style  */
-
-
-/*font-size: 78px;
+    font-size: 78px;
 }
 
-/*.fa-search {
+.fa-search {
     font-size: 78px;
 }
 
@@ -140,4 +126,4 @@
     outline-style: solid;
     text-align: center;
     font-size: 100px;
-} */
+}
