@@ -4,33 +4,10 @@
 
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-  <script type="text/javascript">
-
-    function callAngularFunction() { window.angularComponentReference.zone.run(() => { window.angularComponentReference.loadAngularFunction(); }); }
-  </script>
-
 </head>
 
 <body>
-  
-  <p>Activity <input type="text" id=activity #setActivity><br /></p>
-  <p>Location <input type="text" id=location #setLocation><br /></p>
-  <p>Gender: </p>
-
-  <form>
-    <input type="radio" id="all" name=gender value="all"><label for="all">All</label><br>
-    <input type="radio" id="male" name=gender value="male"><label for="male">Male</label><br>
-    <input type="radio" id="female" name=gender value="female"><label for="female">Female</label><br>
-    <input type="radio" id="nb" name=gender value="nonbin"><label for="nonbin">Non-Binary</label>
-
-  </form>
-
-  <p>Date <input type="date" id=date #setDate></p>
-  <p>Time <input type="time" id=starttime #startTime /><input type="time" id=endtime #endTime /><br /></p>
-  <p>Age <input type="range" id=min-age /><input type=range id=max-age /><br /></p>
-  <p>Description </p>
-
-  <p><input type="button" value="Create Post" onclick = "callAngularFunction();" alert ="Angular Function Called!"></p>
+  <create-post></create-post>
 </body>
 
 

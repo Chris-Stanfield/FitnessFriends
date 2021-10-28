@@ -7,6 +7,7 @@ import { CreatePostComponent } from './create-post/create-post.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ViewPostComponent } from './view-post/view-post.component';
 import { DummyPostMngComponent } from './dummy-post-mng/dummy-post-mng.component';
+import { CreatePostService } from './create-post/create-post.service';
 
 @NgModule({
   declarations: [
@@ -15,12 +16,14 @@ import { DummyPostMngComponent } from './dummy-post-mng/dummy-post-mng.component
     ViewPostComponent,
     CreatePostComponent,
     DummyPostMngComponent
-  ],
+  ], 
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    CreatePostService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

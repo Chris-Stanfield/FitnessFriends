@@ -1,22 +1,42 @@
-import { Component, NgZone } from '@angular/core';
-import { DummyPostMngComponent } from '../dummy-post-mng/dummy-post-mng.component';
+import { CreatePostService } from './create-post.service';
+import { Component, Input } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 
 
 @Component({
-  selector: 'app-create-post',
-  templateUrl: './create-post.component.html',
-  styleUrls: ['./create-post.component.css']
+  selector: 'create-post',
+  template:`
+    <h2> {{ title }} </h2><br>
+
+    <p>Location <input type="text" id=location ><br /></p>
+    <p>Gender: </p>
+
+
+    <input type="radio" id="all" name=gender value="all"><label for="all">All</label><br>
+    <input type="radio" id="male" name=gender value="male"><label for="male">Male</label><br>
+    <input type="radio" id="female" name=gender value="female"><label for="female">Female</label><br>
+    <input type="radio" id="nb" name=gender value="nonbin"><label for="nonbin">Non-Binary</label>
+
+
+
+    <p>Date <input type="date" id=date /></p>
+    <p>Time <input type="time" id=starttime/><input type="time" id=endtime /><br /></p>
+    <p>Age <input type="range" id=min-age /><input type=range id=max-age /><br /></p>
+    <p>Description </p><br />
+    
+    
+    <button type ="submit"> {{ title }}</ button >`
+
+  //styleUrls: ['./create-post.component.css']
+
+
 })
 export class CreatePostComponent  {
+  title = "Create Post";
+  available_activ;
 
-  constructor(private ngZone: NgZone,) { }
-
- 
-
-  ngOnInit() {
-    (window as any).MyNameSpace = { component: this, zone: this.ngZone, loadAngularFunction: () => this.sadness(), };
+  constructor(service: CreatePostService) {
+    this.available_activ = service.getActiv();
   }
-  sadness() { console.log("works"); }
-
 }
