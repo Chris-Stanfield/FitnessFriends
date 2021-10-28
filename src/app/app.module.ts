@@ -15,6 +15,9 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 import { faUserCircle, fas } from '@fortawesome/free-solid-svg-icons';
 import { FilterComponent } from './filter/filter.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { CloudinaryModule, CloudinaryConfiguration } from '@cloudinary/angular-5.x';
+import { Cloudinary } from 'cloudinary-core';
+
 
 
 @NgModule({
@@ -35,6 +38,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
     AuthModule,
     FormsModule,
     FontAwesomeModule,
+    CloudinaryModule.forRoot({Cloudinary}, { cloud_name: 'dqwinsp2q' } as CloudinaryConfiguration),
   ],
   providers: [],
   bootstrap: [AppComponent]
