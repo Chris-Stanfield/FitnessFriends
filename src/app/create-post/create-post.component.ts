@@ -48,10 +48,10 @@ export class CreatePostComponent  {
 
   public clicked()
   {
-    this.the_locale = new String((<HTMLInputElement>document.getElementById("location")));
-    this.a_date = new String((<HTMLInputElement>document.getElementById("the_date")));
-    this.a_time = new String((<HTMLInputElement>document.getElementById("starttime")));
-    this.the_activity = new String((<HTMLInputElement>document.getElementById("activity")));
+    this.the_locale = ((<HTMLInputElement>document.getElementById("location")).value);
+    this.a_date = ((<HTMLInputElement>document.getElementById("the_date")).value);
+    this.a_time = ((<HTMLInputElement>document.getElementById("starttime")).value);
+    this.the_activity = ((<HTMLInputElement>document.getElementById("activity")).value);
     this.databaseCode.updateDB(this.the_activity, this.the_locale, this.a_time, this.a_date);
     
 
