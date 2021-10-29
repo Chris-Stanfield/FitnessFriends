@@ -13,9 +13,20 @@ import { ViewPostComponent } from './view-post/view-post.component';
 import { SignupComponent } from './signup/signup.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
+
 import { DummyPostMngComponent } from './dummy-post-mng/dummy-post-mng.component';
 import { DummyPostMngService } from './dummy-post-mng/dummy-post-mng.service';
 import { CreatePostService } from './create-post/create-post.service';
+
+
+//import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+//import { faUserCircle, fas } from '@fortawesome/free-solid-svg-icons';
+//import { FilterComponent } from './filter/filter.component';
+//import { FeedbackComponent } from './feedback/feedback.component';
+//import { CloudinaryModule, CloudinaryConfiguration } from '@cloudinary/angular-5.x';
+//import { Cloudinary } from 'cloudinary-core';
+
+
 
 
 @NgModule({
@@ -28,21 +39,32 @@ import { CreatePostService } from './create-post/create-post.service';
     LoginComponent,
     SignupComponent,
     ResetPasswordComponent,
+    //FilterComponent,
+    //FeedbackComponent,
 
 
     DummyPostMngComponent
   ], 
-
+>>>>>>> Create-Post
   imports: [
     BrowserModule,
     AppRoutingModule,
     AuthModule,
     FormsModule,
+    //FontAwesomeModule,
+    //CloudinaryModule.forRoot({Cloudinary}, { cloud_name: 'dqwinsp2q' } as CloudinaryConfiguration),
   ],
   providers: [
     CreatePostService,
     DummyPostMngService
   ],
+
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+ export class AppModule { 
+  //constructor(library: FaIconLibrary) {
+    //library.addIconPacks(fas);
+    //library.addIcons(faUserCircle);
+  }
+
