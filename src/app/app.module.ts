@@ -27,7 +27,7 @@ import { CreatePostService } from './create-post/create-post.service';
 
     LoginComponent,
     SignupComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
 
 
     DummyPostMngComponent
