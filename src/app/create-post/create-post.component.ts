@@ -1,6 +1,6 @@
 import { CreatePostService } from './create-post.service';
 import { Component, NgModule ,ViewChild} from '@angular/core';
-//import { DummyPostMngService } from '../dummy-post-mng/dummy-post-mng.service';
+import { DummyPostMngService } from '../dummy-post-mng/dummy-post-mng.service';
 import {} from '@angular/forms';
 
 
@@ -10,6 +10,7 @@ import {} from '@angular/forms';
   template:`
     <h2> {{ title }} </h2><br>
 
+    <p>Activity <input type = "text" id = "activity"><br /></p>
     <p>Location <input type="text" id="location" name="location" ><br /></p>
     <p>Gender: </p>
 
@@ -22,8 +23,10 @@ import {} from '@angular/forms';
 
 
     <p>Date <input type="date" id="the_date" name= "the_date" /></p>
-    <p>Time <input type="time" id=starttime/><input type="time" id=endtime /><br /></p>
-    <p>Age <input type="range" id=min-age /><input type=range id=max-age /><br /></p>
+    <p>Time <input type="time" id=starttime/><br /></p>
+
+    <!--<p>Age <input type="range" id=min-age /><input type=range id=max-age /><br /></p>-->
+
     <p>Description </p><br />
     
     
@@ -34,24 +37,30 @@ import {} from '@angular/forms';
 
 })
 export class CreatePostComponent  {
-  /*title = "Create Post";
+  title = "Create Post";
   //available_activ;
   databaseCode;
   the_locale: String = "";
+  a_date: String = "";
+  a_time: String = "";
+  the_activity: String = "";
   
 
   public clicked()
   {
     this.the_locale = new String((<HTMLInputElement>document.getElementById("location")));
-
-    Date = new String((<HTMLInputElement>document.getElementById("the_date")));
+    this.a_date = new String((<HTMLInputElement>document.getElementById("the_date")));
+    this.a_time = new String((<HTMLInputElement>document.getElementById("starttime")));
+    this.the_activity = new String((<HTMLInputElement>document.getElementById("activity")));
+    this.databaseCode.updateDB(this.the_activity, this.the_locale, this.a_time, this.a_date);
+    
 
 
   }
   constructor(service: DummyPostMngService) {
     //this.available_activ = service.getActiv();
     this.databaseCode = DummyPostMngService;
-
     
-  }*/
+    
+  }
 }

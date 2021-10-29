@@ -23,7 +23,8 @@ import { CreatePostService } from './create-post/create-post.service';
     AppRoutingModule
   ],
   providers: [
-    CreatePostService
+    CreatePostService,
+    DummyPostMngService
   ],
   bootstrap: [AppComponent]
 })
