@@ -19,7 +19,11 @@ describe('ViewPostComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  test('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  test('adds 1 + 2 to equal 3', () => {
+    expect(component.sum(1, 2)).toBe(3);
   });
 });

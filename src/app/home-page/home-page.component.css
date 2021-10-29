@@ -9,9 +9,9 @@ body {
 }
 
 .navigation-container {
-    position: absolute;
+    position: relative;
     top: 10%;
-    right: 20%;
+    right: 10%;
 }
 
 
@@ -70,20 +70,18 @@ body {
 }
 
 #eventCreate {
-    display: inline-block;
     margin: auto;
-    text-align: center;
     width: 100px;
     height: 100px;
 }
 
-.fa-user-circle {
+#img-preview {
     font-size: 100px;
     width: 100px;
     height: 100px;
 }
 
-.fa-plus-square {
+fa-plus-square {
     /* The create event icon style  */
     font-size: 78px;
 }
