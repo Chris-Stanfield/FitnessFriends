@@ -7,6 +7,7 @@ import { SignupComponent } from './signup/signup.component';
 import { ViewPostComponent } from './view-post/view-post.component';
 import { FilterComponent } from './filter/filter.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { RSVPComponent } from './rsvp/rsvp.component';
 
 const routes: Routes = [
   { path: 'createpost', component: CreatePostComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent},
   { path: 'feedback', component: FeedbackComponent},
   { path: 'filter', component: FilterComponent},
+  { path: 'rsvp', component: RSVPComponent}
 
 ];
 

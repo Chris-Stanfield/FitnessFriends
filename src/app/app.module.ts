@@ -17,6 +17,7 @@ import { FilterComponent } from './filter/filter.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { CloudinaryModule, CloudinaryConfiguration } from '@cloudinary/angular-5.x';
 import { Cloudinary } from 'cloudinary-core';
+import { RSVPComponent } from './rsvp/rsvp.component';
 
 
 
@@ -30,7 +31,8 @@ import { Cloudinary } from 'cloudinary-core';
     SignupComponent,
     ResetPasswordComponent,
     FilterComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    RSVPComponent
   ],
   imports: [
     BrowserModule,
