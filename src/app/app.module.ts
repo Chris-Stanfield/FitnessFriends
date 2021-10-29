@@ -40,7 +40,7 @@ import { Cloudinary } from 'cloudinary-core';
     SignupComponent,
     ResetPasswordComponent,
     FilterComponent,
-    FeedbackComponent
+    FeedbackComponent,
 
 
     DummyPostMngComponent
