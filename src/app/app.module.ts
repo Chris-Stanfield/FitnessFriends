@@ -12,13 +12,7 @@ import { ViewPostComponent } from './view-post/view-post.component';
 
 import { SignupComponent } from './signup/signup.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
-import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faUserCircle, fas } from '@fortawesome/free-solid-svg-icons';
-import { FilterComponent } from './filter/filter.component';
-import { FeedbackComponent } from './feedback/feedback.component';
-import { CloudinaryModule, CloudinaryConfiguration } from '@cloudinary/angular-5.x';
-import { Cloudinary } from 'cloudinary-core';
-import { RSVPComponent } from './rsvp/rsvp.component';
+
 
 
 import { DummyPostMngComponent } from './dummy-post-mng/dummy-post-mng.component';
@@ -26,12 +20,21 @@ import { DummyPostMngService } from './dummy-post-mng/dummy-post-mng.service';
 import { CreatePostService } from './create-post/create-post.service';
 
 
-//import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-//import { faUserCircle, fas } from '@fortawesome/free-solid-svg-icons';
-//import { FilterComponent } from './filter/filter.component';
-//import { FeedbackComponent } from './feedback/feedback.component';
-//import { CloudinaryModule, CloudinaryConfiguration } from '@cloudinary/angular-5.x';
-//import { Cloudinary } from 'cloudinary-core';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faUserCircle, fas } from '@fortawesome/free-solid-svg-icons';
+import { FilterComponent } from './filter/filter.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { CloudinaryModule, CloudinaryConfiguration } from '@cloudinary/angular-5.x';
+import { Cloudinary } from 'cloudinary-core';
+
+
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faUserCircle, fas } from '@fortawesome/free-solid-svg-icons';
+import { FilterComponent } from './filter/filter.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { CloudinaryModule, CloudinaryConfiguration } from '@cloudinary/angular-5.x';
+import { Cloudinary } from 'cloudinary-core';
+import { RSVPComponent } from './rsvp/rsvp.component';
 
 
 
@@ -42,15 +45,16 @@ import { CreatePostService } from './create-post/create-post.service';
     HomePageComponent,
     ViewPostComponent,
     CreatePostComponent,
-
     LoginComponent,
     SignupComponent,
     ResetPasswordComponent,
-    //FilterComponent,
-    //FeedbackComponent,
+    FilterComponent,
+    FeedbackComponent,
+    DummyPostMngComponent,
+    FilterComponent,
+    FeedbackComponent,
+    RSVPComponent
 
-
-    DummyPostMngComponent
   ],
 
   imports: [
@@ -69,9 +73,10 @@ import { CreatePostService } from './create-post/create-post.service';
   bootstrap: [AppComponent]
 })
 
- export class AppModule { 
-  //constructor(library: FaIconLibrary) {
-    //library.addIconPacks(fas);
-    //library.addIcons(faUserCircle);
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    library.addIconPacks(fas);
+    library.addIcons(faUserCircle);
   }
 
+}
