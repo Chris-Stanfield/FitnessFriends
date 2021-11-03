@@ -12,6 +12,13 @@ import { ViewPostComponent } from './view-post/view-post.component';
 
 import { SignupComponent } from './signup/signup.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faUserCircle, fas } from '@fortawesome/free-solid-svg-icons';
+import { FilterComponent } from './filter/filter.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { CloudinaryModule, CloudinaryConfiguration } from '@cloudinary/angular-5.x';
+import { Cloudinary } from 'cloudinary-core';
+import { RSVPComponent } from './rsvp/rsvp.component';
 
 
 import { DummyPostMngComponent } from './dummy-post-mng/dummy-post-mng.component';
