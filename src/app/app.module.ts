@@ -17,7 +17,7 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 import { faUserCircle, fas } from '@fortawesome/free-solid-svg-icons';
 import { FilterComponent } from './filter/filter.component';
 import { FeedbackComponent } from './feedback/feedback.component';
-import { CloudinaryModule, CloudinaryConfiguration } from '../../node_modules/cloudinary/angular-5.x';
+import { CloudinaryModule, CloudinaryConfiguration } from '@cloudinary/angular-5.x';
 import { Cloudinary } from 'cloudinary-core';
 import { RSVPComponent } from './rsvp/rsvp.component';
 
