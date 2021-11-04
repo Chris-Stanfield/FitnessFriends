@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const path = require('path');
 const app = express();
-const db = require("./app/models");
+const db = require("./src/app/models");
 
 
 
