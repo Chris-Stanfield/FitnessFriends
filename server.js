@@ -16,8 +16,17 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
 db.sequelize.sync();
 
+<<<<<<< HEAD
+// Serve only the static files form the dist directory
+app.use(express.static('./dist/Fitnessfriends'));
+
+app.get('/*', (req, res) =>
+    res.sendFile('index.html', { root: 'dist/Fitnessfriends/' }),
+);
+=======
 app.get('/*', (req, res) => { res.sendFile('index.html', { root: 'dist/software-engineering-team-project-fourtothefloor/' }) });
 
 const PORT = process.env.PORT || 8080;
+>>>>>>> origin
 
 app.listen(PORT, () => {console.log(`server is on ${ PORT }.`)});
