@@ -3,8 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\create-post"
+    "\\src\\app\\create-post",
+    "\\src\\app\\dummy-post-mng"
   ],
-  "SelectedNode": "\\src\\app\\create-post\\create-post.component.ts",
+  "SelectedNode": "\\src\\app\\app.module.ts",
   "PreviewInSolutionExplorer": false
 }
