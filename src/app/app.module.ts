@@ -21,15 +21,6 @@ import { CloudinaryModule, CloudinaryConfiguration } from '@cloudinary/angular-5
 import { Cloudinary } from 'cloudinary-core';
 import { RSVPComponent } from './rsvp/rsvp.component';
 
-
-import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faUserCircle, fas } from '@fortawesome/free-solid-svg-icons';
-import { FilterComponent } from './filter/filter.component';
-import { FeedbackComponent } from './feedback/feedback.component';
-import { CloudinaryModule, CloudinaryConfiguration } from '@cloudinary/angular-5.x';
-import { Cloudinary } from 'cloudinary-core';
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -70,10 +61,4 @@ import { Cloudinary } from 'cloudinary-core';
     library.addIcons(faUserCircle);
   }
  }
-export class AppModule {
-  constructor(library: FaIconLibrary) {
-    library.addIconPacks(fas);
-    library.addIcons(faUserCircle);
-  }
 
-}
