@@ -14,15 +14,16 @@ export class HomePageComponent implements OnInit {
   }
 
    onUpload () {
-  //   const client = require('../../../database.js');
-  //   (async () => {
-  //     await client.connect();
-  //     const result = await client.query(`INSERT INTO TheUser(profilepic) 
-  //             VALUES($1) RETURNING profilepic`, [this.selectedFile]);
-  //     console.log(result.rows);
-  //     client.end();
+    // const client = require('../../../database.js');
+    // (async () => {
+    //   await client.connect();
+    //   const result = await client.query(`INSERT INTO TheUser(profilepic) 
+    //           VALUES($1) RETURNING profilepic`, [this.selectedFile]);
+    //   console.log(result.rows);
+    //   client.end();
   //  })};
    }
+   
   
 
   constructor() { }

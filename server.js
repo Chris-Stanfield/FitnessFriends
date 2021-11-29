@@ -23,7 +23,7 @@ app.get('/*', (req, res) =>
     res.sendFile('index.html', { root: 'dist/Fitnessfriends/' }),
 );
 
-require("./src/app/routes/fitness.routes")(app);
+//require("./src/app/routes/fitness.routes")(app);
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT , () => {console.log(`server is on ${ PORT }.`)});
