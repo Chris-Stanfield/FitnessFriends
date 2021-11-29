@@ -1,25 +1,30 @@
 module.exports = (sequelize, Sequelize) => {
-  const Tutorial = sequelize.define("whointhefuck", {
+  const Post = sequelize.define("Post", {
+    userid: {
+      type: Sequelize.STRING
+    },
     activity: {
-      type: Sequelize.TEXT
+      type: Sequelize.STRING
     },
-    locale: {
-      type: Sequelize.TEXT
+    thelocation: {
+      type: Sequelize.STRING
     },
-	
-	gender: { type: Sequelize.CHAR},
-	
-	
-    date: {
+	  gender: { 
+      type: Sequelize.CHAR
+    },
+    datestarts: {
       type: Sequelize.DATE
     },
-	
-	starttime: {type: Sequelize.TIME},
-	
-	endtime: {type: Sequelize.TIME},
-	
-	description: {type: Sequelize.TEXT}
+	  starttime: {
+      type: Sequelize.TIME
+    },
+	  endtime: {
+      type: Sequelize.TIME
+    },
+	  postdescription: {
+      type: Sequelize.STRING
+    }
   });
 
-  return Tutorial;
+  return Post;
 };

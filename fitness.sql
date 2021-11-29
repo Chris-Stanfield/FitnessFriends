@@ -18,3 +18,5 @@ CREATE TABLE Post(
      PRIMARY KEY (UserId, DateStarts, StartTime)
 );
 
+INSERT INTO TheUser VALUES ('Nick', 'Password123', 'token1', 'mypic.jpg');
+

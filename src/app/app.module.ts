@@ -21,6 +21,7 @@ import { CloudinaryModule, CloudinaryConfiguration } from '@cloudinary/angular-5
 import { Cloudinary } from 'cloudinary-core';
 import { RSVPComponent } from './rsvp/rsvp.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,8 @@ import { RSVPComponent } from './rsvp/rsvp.component';
     DummyPostMngComponent,
     FilterComponent,
     FeedbackComponent,
-    RSVPComponent
+    RSVPComponent,
+
 
   ],
 
@@ -45,7 +47,9 @@ import { RSVPComponent } from './rsvp/rsvp.component';
     AuthModule,
     FormsModule,
     FontAwesomeModule,
-    CloudinaryModule.forRoot({Cloudinary}, { cloud_name: 'dqwinsp2q' } as CloudinaryConfiguration),
+    CloudinaryModule.forRoot({Cloudinary}, { cloud_name: 'dqwinsp2q', 
+                                             api_key: '372846421766291',
+                                             api_secret: '9Z9oy1_iPyGmctkPs-3PtEPgcHw'} as CloudinaryConfiguration),
   ],
   providers: [
     CreatePostService,
