@@ -10,7 +10,8 @@ body {
 
 #user-pic{
     width: 120px;
-    height: 120px;
+    height: 70px;
+    border-radius: 50%;
 }
 
 .navigation-container {
@@ -162,17 +163,13 @@ body {
     padding-left: 40px;
     font-size: large;
   }
+  
+  .time{
+    padding-left: 40px;
+    font-size: large;
+  }
 
-  .yes{
-    float: right;
-    margin-right: 10px;
-  }
-  .no{
-    top: auto;
-    float: right;
-    margin-right: 10px;
-    
-  }
+
   a{
     float: right;
     margin-right: 10px;
