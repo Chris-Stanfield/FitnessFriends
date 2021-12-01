@@ -8,6 +8,11 @@ body {
     width: 350px;
 }
 
+#user-pic{
+    width: 120px;
+    height: 120px;
+}
+
 .navigation-container {
     position: relative;
     top: 10%;
@@ -16,6 +21,7 @@ body {
 
 
 /* controls the style of each navigation button */
+
 
 .navigation-container div {
     float: left;
