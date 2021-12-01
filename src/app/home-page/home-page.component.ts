@@ -13,6 +13,10 @@ export class HomePageComponent implements OnInit {
     this.selectedFile = event.target.files[0];
   }
 
+  RSVP(){
+    window.alert("Successfully RSVPd for this event!")
+  }
+
    onUpload () {
     // const client = require('../../../database.js');
     // (async () => {

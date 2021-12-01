@@ -125,7 +125,7 @@ body {
     cursor: pointer;
 }
 
-.Feed {
+.Feed1 {
     position: absolute;
     top: 50%;
     width: 90%;
@@ -184,4 +184,21 @@ body {
     margin-left: 40%;
     text-align: right;
     font-size: large;
+  }
+
+  .feed-rep1 {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    top: 30%;
+    left: 10%;
+    margin-top: -50px;
+    margin-left: -100px;
+    background-color: #e1f2ec;
+    
+  }
+
+  .RSVP{
+    float: right;
+    margin-right: 10px;
   }

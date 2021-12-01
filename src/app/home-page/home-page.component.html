@@ -37,18 +37,32 @@
         </div>
     </div>
 
-    <div class="Feed">
+    <div class="Feed1">
         <div class="feed-rep">
             <div class="prof-pic"></div>
             <div class="post-content">2 Hour workout at the UNCW track</div>
             <div class="name">Zach Cole</div>
-            <div class="date">2 hours ago</div>
+            <div class="date"> When? 12/8/21</div>
             <div class="post-content"></div>
             <button class="no">X</button>
-            <a routerLink="/rsvp">Rsvp</a>
+            <button class="RSVP" (click)="RSVP()"> RSVP </button> 
             <a routerLink="/feedback">Feedback</a>
         </div>
+
+        <div class="feed-rep1">
+            <img id=user-pic src="bestman.jpg">
+            <div class="post-content">Basketball at Long Leaf Park</div>
+            <div class="name">Chris Stanfield</div>
+            <div class="date">When? 12/9/21</div>
+            <div class="post-content"></div>
+            <button class="no">X</button>
+            <button class="RSVP" (click)="RSVP()"> RSVP </button> 
+            <a routerLink="/feedback">Feedback</a>
+        </div>
+
     </div>
+
+  
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="/src/app/home-page/home-page.component.js"></script>
