@@ -1,22 +1,25 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="home-page.component.css">
+    <!--<link rel="stylesheet" href="home-page.component.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/74fce77be6.js" crossorigin="anonymous"></script>
     <title>Global Fitness Home</title>
 </head>
 
 <body>
     <h1 class="title">Global Fitness</h1>
-
+    <h2></h2>
     <div class=top-bar>
-        <div class="profile-container">
+        <span class="profile-container">
             <!--<fa-icon [icon]="['fas', 'images']"></fa-icon>-->
             <img src="" id="img-preview">
             <p id="username">Chris Stanfield</p>
-            <input type="file" (change)="onFileSelected($event)">
-            <button type="button" (click)="onUpload()">Upload</button>
-        </div>
+            <!--<input type="file" #profilePic/>
+            <button type="button" (click)="updateUser(profilePic.value); profilePic.value=''">Upload</button>-->
+        </span>
 
         <div class="navigation-container">
             <div><a routerLink="/createpost" id="eventCreate"><!--<i class="far fa-plus-square"></i>-->Create Post</a></div>
@@ -35,7 +38,16 @@
     </div>
 
     <div class="Feed">
-        <p>This is where the feed will go</p>
+        <div class="feed-rep">
+            <div class="prof-pic"></div>
+            <div class="post-content">2 Hour workout at the UNCW track</div>
+            <div class="name">Zach Cole</div>
+            <div class="date">2 hours ago</div>
+            <div class="post-content"></div>
+            <button class="no">X</button>
+            <a routerLink="/rsvp">Rsvp</a>
+            <a routerLink="/feedback">Feedback</a>
+        </div>
     </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

@@ -10,3 +10,10 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+export interface TheUser{
+  UserID: number;
+  UserPassword: string;
+  Token: string;
+  ProfilePic: string;
+}

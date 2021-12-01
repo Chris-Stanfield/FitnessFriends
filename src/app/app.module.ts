@@ -22,6 +22,9 @@ import { Cloudinary } from 'cloudinary-core';
 import { RSVPComponent } from './rsvp/rsvp.component';
 
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +53,8 @@ import { RSVPComponent } from './rsvp/rsvp.component';
     CloudinaryModule.forRoot({Cloudinary}, { cloud_name: 'dqwinsp2q', 
                                              api_key: '372846421766291',
                                              api_secret: '9Z9oy1_iPyGmctkPs-3PtEPgcHw'} as CloudinaryConfiguration),
+   
+    
   ],
   providers: [
     CreatePostService,

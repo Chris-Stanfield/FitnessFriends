@@ -23,7 +23,9 @@ body {
     position: relative;
     left: 50%;
 }
-
+.top-bar {
+    outline-style: solid;
+}
 
 /* style for the button in the navigation conatiner */
 
@@ -81,7 +83,7 @@ body {
     height: 100px;
 }
 
-fa-plus-square {
+#fa-plus-square {
     /* The create event icon style  */
     font-size: 78px;
 }
@@ -119,11 +121,61 @@ fa-plus-square {
 
 .Feed {
     position: absolute;
-    left: 5%;
     top: 50%;
     width: 90%;
-    height: 100%;
+    height: 90%;
     outline-style: solid;
-    text-align: center;
-    font-size: 100px;
+   
 }
+
+/* from view post */
+.feed-rep{
+    width: 600px;
+    height: 300px;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    margin-top: -50px;
+    margin-left: -100px;
+    background-color: #e1f2ec;
+    
+  }
+  .prof-pic{
+    width: 120px;
+    height: 70px;
+    background-image: url(../home-page/pictures/profpic.jpg);
+    border-radius: 50%;
+  }
+
+  .name{
+    padding-left: 30px;
+    font-size: large;
+  }
+
+  .date{
+    padding-left: 40px;
+    font-size: large;
+  }
+
+  .yes{
+    float: right;
+    margin-right: 10px;
+  }
+  .no{
+    top: auto;
+    float: right;
+    margin-right: 10px;
+    
+  }
+  a{
+    float: right;
+    margin-right: 10px;
+  }
+
+  .post-content{
+    background-color: white;
+    margin-right: 10px;
+    margin-left: 40%;
+    text-align: right;
+    font-size: large;
+  }
