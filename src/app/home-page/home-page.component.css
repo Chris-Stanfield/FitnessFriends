@@ -150,7 +150,7 @@ body {
   .prof-pic{
     width: 120px;
     height: 70px;
-    background-image: url(../home-page/pictures/profpic.jpg);
+    background-image: url(assets/pictures/profpic.jpg);
     border-radius: 50%;
   }
 
