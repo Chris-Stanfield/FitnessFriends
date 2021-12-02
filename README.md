@@ -1,3 +1,5 @@
+Our [app](global-fitness.herokuapp.com) is deployed to Heroku 
+
 # What you neeed installed 
 To be able to run the project you will need [node.js](https://nodejs.org/en/download)
 You will also need Angular CLI, which, after installing node. You can get by running the command `npm install -g @angular/cli` in a terminal window.
