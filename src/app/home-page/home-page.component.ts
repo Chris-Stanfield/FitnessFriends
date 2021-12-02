@@ -8,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
   selectedFile = null;
- 
+  chrisImage:string = "../src/app/home-page/pictures/pic1.jpeg"
+
   onFileSelected (event:any) {
     this.selectedFile = event.target.files[0];
+  }
+
+  RSVP(){
+    window.alert("Successfully RSVPd for this event!")
   }
 
    onUpload () {

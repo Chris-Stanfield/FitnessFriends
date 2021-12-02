@@ -8,6 +8,12 @@ body {
     width: 350px;
 }
 
+#user-pic{
+    width: 120px;
+    height: 70px;
+    border-radius: 50%;
+}
+
 .navigation-container {
     position: relative;
     top: 10%;
@@ -16,6 +22,7 @@ body {
 
 
 /* controls the style of each navigation button */
+
 
 .navigation-container div {
     float: left;
@@ -119,7 +126,7 @@ body {
     cursor: pointer;
 }
 
-.Feed {
+.Feed1 {
     position: absolute;
     top: 50%;
     width: 90%;
@@ -143,7 +150,7 @@ body {
   .prof-pic{
     width: 120px;
     height: 70px;
-    background-image: url(../home-page/pictures/profpic.jpg);
+    background-image: url(assets/pictures/profpic.jpg);
     border-radius: 50%;
   }
 
@@ -156,17 +163,13 @@ body {
     padding-left: 40px;
     font-size: large;
   }
+  
+  .time{
+    padding-left: 40px;
+    font-size: large;
+  }
 
-  .yes{
-    float: right;
-    margin-right: 10px;
-  }
-  .no{
-    top: auto;
-    float: right;
-    margin-right: 10px;
-    
-  }
+
   a{
     float: right;
     margin-right: 10px;
@@ -178,4 +181,21 @@ body {
     margin-left: 40%;
     text-align: right;
     font-size: large;
+  }
+
+  .feed-rep1 {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    top: 30%;
+    left: 10%;
+    margin-top: -50px;
+    margin-left: -100px;
+    background-color: #e1f2ec;
+    
+  }
+
+  .RSVP{
+    float: right;
+    margin-right: 10px;
   }
