@@ -1,4 +1,4 @@
-Our [app](global-fitness.herokuapp.com) is deployed to Heroku 
+Our app is deployed to Heroku global-fitness.herokuapp.com
 
 # What you neeed installed 
 To be able to run the project you will need [node.js](https://nodejs.org/en/download)
