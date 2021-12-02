@@ -1,3 +1,14 @@
+# What you neeed installed 
+To be able to run the project you will need [node.js](https://nodejs.org/en/download)
+You will also need Angular CLI, which, after installing node. You can get by running the command `npm install -g @angular/cli` in a terminal window.
+That's it! You now having everything that you need.
+
+# How to run the app
+After cloning the app on your machine using the command `git clone https://github.com/UNCW-CSC-450/software-engineering-team-project-fourtothefloor.git`.
+Go to the project root folder in a terminal window and run the command `npm install` or `npm i` This will generate the package-lock.json and node-modules folder that is necessary for the app to run.
+Once you have done that, in the same terminal window, run the command `ng serve`. Open web browser, in a new window, in the address bar type `localhost:4200` and press enter.
+You're done!
+
 # Fitnessfriends
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
