@@ -15,4 +15,6 @@ export class AppComponent {
   faPlusSquare = faPlusSquare;
   faSearch = faSearch;
   faCommentMedical = faCommentMedical;
+  count:number = 0;
+  count1:number = 0;
 }
