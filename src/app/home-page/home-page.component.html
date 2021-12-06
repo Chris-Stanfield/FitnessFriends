@@ -46,7 +46,9 @@
             <div class="date"> When? 12/8/21</div>
             <div class="time">Time? 12:00pm</div>
             <div class="post-content"></div>
-            <button class="RSVP" (click)="RSVP()"> RSVP </button> 
+            <button class="RSVP" (click)="RSVP()"> RSVP </button>
+            <button [style.color]="liked?'red':'black'" class="Like" (click)="onLike()"><i class="fas fa-heart"></i></button>
+            <p class="likeCount">{{count}}</p>
             <a routerLink="/feedback"><i class="fas fa-comment-medical" id="feedback1"></i></a>
         </div>
 
@@ -57,7 +59,9 @@
             <div class="date">When? 12/9/21</div>
             <div class="time">Time? 3:00pm</div>
             <div class="post-content"></div>
-            <button class="RSVP" (click)="RSVP()"> RSVP </button> 
+            <button class="RSVP" (click)="RSVP()"> RSVP </button>
+            <button [style.color]="liked1?'red':'black'" class="Like" (click)="onLike1()"><i class="fas fa-heart"></i></button>
+            <p class="likeCount">{{count1}}</p> 
             <a routerLink="/feedback"><i class="fas fa-comment-medical" id="feedback1"></i></a>
         </div>
 

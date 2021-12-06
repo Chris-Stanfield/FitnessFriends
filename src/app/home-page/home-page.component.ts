@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { count } from 'console';
+
 
 
 @Component({
@@ -28,6 +30,28 @@ export class HomePageComponent implements OnInit {
     //   console.log(result.rows);
     //   client.end();
   //  })};
+   }
+  liked=false;
+  count:number = 0;    
+   onLike(){
+    this.liked=!this.liked;
+    if(!this.liked){
+      return this.count--;
+    }
+    this.count++;
+
+      
+      
+   }
+
+   liked1=false;
+   count1:number = 0;    
+   onLike1(){
+    this.liked1=!this.liked1;
+      if(!this.liked1){
+        return this.count1--;
+      }
+      this.count1++;
    }
    
   
