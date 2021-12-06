@@ -14,7 +14,7 @@ import { DummyPostMngComponent } from './dummy-post-mng/dummy-post-mng.component
 import { DummyPostMngService } from './dummy-post-mng/dummy-post-mng.service';
 import { CreatePostService } from './create-post/create-post.service';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faUserCircle, fas } from '@fortawesome/free-solid-svg-icons';
+import { faUserCircle, fas, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FilterComponent } from './filter/filter.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { CloudinaryModule, CloudinaryConfiguration } from '@cloudinary/angular-5.x';
@@ -68,6 +68,7 @@ import { RSVPComponent } from './rsvp/rsvp.component';
   constructor(library: FaIconLibrary) {
     library.addIconPacks(fas);
     library.addIcons(faUserCircle);
+    library.addIcons(faSearch);
   }
  }
 

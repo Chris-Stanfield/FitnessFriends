@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faCommentMedical } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +11,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Fitnessfriends';
+  faUserCircle = faUserCircle;
+  faPlusSquare = faPlusSquare;
+  faSearch = faSearch;
+  faCommentMedical = faCommentMedical;
 }

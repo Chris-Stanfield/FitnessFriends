@@ -90,7 +90,7 @@ body {
     height: 100px;
 }
 
-#fa-plus-square {
+.fa-plus-square {
     /* The create event icon style  */
     font-size: 78px;
 }
@@ -198,4 +198,14 @@ body {
   .RSVP{
     float: right;
     margin-right: 10px;
+    background-color: greenyellow;
+    
+  }
+
+  .RSVP:hover{
+    background-color: cyan;
+  }
+
+  #feedback1{
+      font-size: 32px;
   }
