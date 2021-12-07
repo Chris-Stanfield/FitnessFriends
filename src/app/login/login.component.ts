@@ -43,6 +43,7 @@ export class LoginComponent implements OnInit {
     }
     else{
       console.log("Login Unsuccessful!")
+      alert("Username or password is incorrect. Try again.")
     }
     }
 
