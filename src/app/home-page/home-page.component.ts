@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { count } from 'console';
+
 
 
 
@@ -10,15 +9,22 @@ import { count } from 'console';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-  selectedFile = null;
-  chrisImage:string = "../src/app/home-page/pictures/pic1.jpeg"
+  // selectedFile = null;
+  // chrisImage:string = "../src/app/home-page/pictures/pic1.jpeg"
 
-  onFileSelected (event:any) {
-    this.selectedFile = event.target.files[0];
-  }
-
+  // onFileSelected (event:any) {
+  //   this.selectedFile = event.target.files[0];
+  // }
+  rsvpCount:number = 0;
   RSVP(){
     window.alert("Successfully RSVPd for this event!")
+    this.rsvpCount++;
+  }
+
+  rsvpCount1:number = 0;
+  RSVP1(){
+    window.alert("Successfully RSVPd for this event!")
+    this.rsvpCount1++;
   }
 
    onUpload () {
@@ -53,6 +59,8 @@ export class HomePageComponent implements OnInit {
       }
       this.count1++;
    }
+
+   
    
   
 
@@ -66,4 +74,8 @@ export class HomePageComponent implements OnInit {
 
 }
 
+
+function axios(arg0: { url: string; method: string; headers: { 'Content-Type': string; }; data: FormData; }) {
+  throw new Error('Function not implemented.');
+}
 

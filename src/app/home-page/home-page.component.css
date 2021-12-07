@@ -226,3 +226,20 @@ body {
       font-size: large;
       margin: 5px;
   }
+
+
+.rsvpCount{
+    clear: right;
+    float:right;
+    font-size: large;
+    margin: 5px;
+  
+}
+
+.attendes{
+    clear: top;
+    font-size: 125%;
+    float:right;
+    margin: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
