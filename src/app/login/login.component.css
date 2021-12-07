@@ -1,0 +1,43 @@
+
+ body{
+    background-color: purple;
+    color: greenyellow;
+    border: solid 4px black;
+ }
+ h3 {
+     text-align: center;
+ }
+ .login{
+    padding: 20px; 
+    width: 50%;
+    float: left;
+ }
+.pass {
+    float: right;
+    padding: 20px;
+    width: 50%;
+}
+.form-check{
+    clear: both;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+}
+.link{
+    padding: 10px;
+}
+.form-label{
+    width: 100%;
+    text-align: center;
+}
+.form{
+    display: block;
+}
+.btn:disabled{
+    background-color: gray;
+    color: black;
+}
+.btn:enabled{
+    background-color: greenyellow;
+    color: purple;
+}
