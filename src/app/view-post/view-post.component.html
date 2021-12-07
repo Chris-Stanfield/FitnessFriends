@@ -17,6 +17,7 @@
             <!--<fa-icon [icon]="['fas', 'images']"></fa-icon>-->
             <img id=user-pic src="assets/pictures/chris.jpg">
             <p id="username">Chris Stanfield</p>
+            <!-- <button type="button" (click)="updatePic()"></button> -->
             <!--<input type="file" #profilePic/>
             <button type="button" (click)="updateUser(profilePic.value); profilePic.value=''">Upload</button>-->
         </span>
@@ -47,9 +48,15 @@
             <div class="time">Time? 12:00pm</div>
             <div class="post-content"></div>
             <button class="RSVP" (click)="RSVP()"> RSVP </button> 
+            <button [style.color]="liked?'red':'black'" class="Like" (click)="onLike()"><i class="fas fa-heart"></i></button>
+            <p class="likeCount">{{count}}</p>
             <a routerLink="/feedback"><i class="fas fa-comment-medical" id="feedback1"></i></a>
+            <p class="rsvpCount">{{rsvpCount}}</p>
+            <p class=attendes>In Attendence</p>
+            
         </div>
 
+      
     </div>
 
   

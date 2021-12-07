@@ -23,7 +23,5 @@ describe('ViewPostComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  test('adds 1 + 2 to equal 3', () => {
-    expect(component.sum(1, 2)).toBe(3);
-  });
+
 });
