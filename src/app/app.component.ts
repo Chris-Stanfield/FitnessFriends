@@ -20,4 +20,6 @@ export class AppComponent {
   constructor(private router: Router){}
 
   gotoView() {this.router.navigateByUrl("/viewpost");}
+  count:number = 0;
+  count1:number = 0;
 }
