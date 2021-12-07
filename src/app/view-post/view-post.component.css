@@ -1,96 +1,211 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    
-}
-html { 
-    background-color:#e2b13c; 
-    
-    background-size: cover;
-  }
-
-.title h1{
-    background-color: #8DB255;
-    color: #e1f2ec;
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 0%;
-    padding-bottom: 0.5%;
-    padding-top: 1.25%;
-    padding-left: 1.25%;
-    font-family: Oswald;
+body {
+  background-color: purple;
 }
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:#8DB255;
-  }
+.profile-container {
+  float: left;
+  padding: 15px;
+  width: 350px;
+}
+
+#user-pic{
+  width: 120px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.navigation-container {
+  position: relative;
+  top: 10%;
+  right: 10%;
+}
+
+
+/* controls the style of each navigation button */
+
+
+.navigation-container div {
+  float: left;
+  padding: 15px;
+  position: relative;
+  left: 50%;
+}
+.top-bar {
+  outline-style: solid;
+}
+
+/* style for the button in the navigation conatiner */
+
+.navigation-container button:hover {
+  background-color: greenyellow;
+  cursor: pointer;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  font-size: 70px;
+  color: greenyellow;
+}
+
+.recents {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+
+
+/* style for just the recent header above list of names */
+
+.recents p {
+  margin: auto;
+  text-align: center;
+}
+
+
+/* controls the style for recent  */
+
+.recents ul {
+  margin: auto;
+  text-align: center;
+}
+
+
+/* controls style for the list of names in recent */
+
+.recents ul>li {
+  margin: 0px;
+  text-align: left;
+}
+
+#eventCreate {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+
+#img-preview {
+  font-size: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.fa-plus-square {
+  /* The create event icon style  */
+  font-size: 78px;
+}
+
+.fa-search {
+  font-size: 78px;
+}
+
+.fa-comment-medical {
+  font-size: 78px;
+}
+
+#filter {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+
+#feedback {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+
+#profilePicB {
+  margin: auto;
+  padding: 0%;
+  cursor: pointer;
+}
+
+#submitB:hover {
+  margin: auto;
+  cursor: pointer;
+}
+
+.Feed1 {
+  position: absolute;
+  top: 50%;
+  width: 90%;
+  height: 90%;
+  outline-style: solid;
+ 
+}
+
+/* from view post */
+.feed-rep{
+  width: 600px;
+  height: 300px;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  margin-top: -50px;
+  margin-left: -100px;
+  background-color: #e1f2ec;
   
-  li {
-    display: inline;
-  }
+}
+.prof-pic{
+  width: 120px;
+  height: 70px;
+  background-image: url(assets/pictures/profpic.jpg);
+  border-radius: 50%;
+}
+
+.name{
+  padding-left: 30px;
+  font-size: large;
+}
+
+.date{
+  padding-left: 40px;
+  font-size: large;
+}
+
+.time{
+  padding-left: 40px;
+  font-size: large;
+}
+
+
+a{
+  float: right;
+  margin-right: 10px;
+}
+
+.post-content{
+  background-color: white;
+  margin-right: 10px;
+  margin-left: 40%;
+  text-align: right;
+  font-size: large;
+}
+
+.feed-rep1 {
+  width: 600px;
+  height: 300px;
+  position: relative;
+  top: 30%;
+  left: 10%;
+  margin-top: -50px;
+  margin-left: -100px;
+  background-color: #e1f2ec;
   
-  li a {
-    display: inline-block;
-    color: #e1f2ec;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: Oswald;
-  }
-  li a:hover{
-      color: #e2b13c;
-  }
+}
 
-  .feed-rep{
-    width: 400px;
-    height: 145px;
-    position: fixed;
-    top: 35%;
-    left: 40%;
-    margin-top: -50px;
-    margin-left: -100px;
-    background-color: #e1f2ec;
-    
-  }
-  .prof-pic{
-    width: 120px;
-    height: 70px;
-    background-image: url(../view-post/pictures/profpic.jpg);
-    border-radius: 50%;
-  }
+.RSVP{
+  float: right;
+  margin-right: 10px;
+  background-color: greenyellow;
+  
+}
 
-  .name{
-    padding-left: 30px;
-  }
+.RSVP:hover{
+  background-color: cyan;
+}
 
-  .date{
-    padding-left: 40px;
-    font-size:x-small;
-  }
-
-  .yes{
-    float: right;
-    margin-right: 10px;
-  }
-  .no{
-    top: auto;
-    float: right;
-    margin-right: 10px;
-    
-  }
-  a{
-    float: right;
-    margin-right: 10px;
-  }
-
-  .post-content{
-    background-color: white;
-    margin-right: 10px;
-    margin-left: 40%;
-    text-align: right;
-  }
-  /* #e2b13c */
+#feedback1{
+    font-size: 32px;
+}
