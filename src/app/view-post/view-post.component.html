@@ -1,15 +1,63 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <body>
+<html>
+
+<head>
+    <!--<link rel="stylesheet" href="home-page.component.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/74fce77be6.js" crossorigin="anonymous"></script>
+    <title>Global Fitness Home</title>
+</head>
+
+<body>
+    <h1 class="title">Fitness Friends</h1>
+    <h2></h2>
+    <div class=top-bar>
+        <span class="profile-container">
+            <!--<fa-icon [icon]="['fas', 'images']"></fa-icon>-->
+            <img id=user-pic src="assets/pictures/chris.jpg">
+            <p id="username">Chris Stanfield</p>
+            <!--<input type="file" #profilePic/>
+            <button type="button" (click)="updateUser(profilePic.value); profilePic.value=''">Upload</button>-->
+        </span>
+
+        <nav class="navigation-container">
+            
+            <div><a routerLink="/createpost" id="eventCreate"><i class="far fa-plus-square"></i>Create Post</a></div>
+            <div><a routerLink="/filter" id="filter"><i class="fas fa-search"></i>Filter</a></div>
+            <div><a routerLink="/feedback" id="feedback"><i class="fas fa-comment-medical" aria-hidden="true"></i>Feedback</a></div>
+            <div class="recents">
+                <p><b><u>Recent</u></b></p>
+                <ul class="recentNames">
+                    <li>Zach Cole</li>
+                    <li>Steven Katona</li>
+                    <li>Nick Reyer</li>
+                </ul>
+            </div>
+        
+        </nav>
+    </div>
+
+    <div class="Feed1">
         <div class="feed-rep">
             <div class="prof-pic"></div>
-            <div class="post-content">2 Hour workout at the UNCW track</div>
+            <div class="post-content">Activity: 2 Hour workout<br>Location: UNCW track</div>
             <div class="name">Zach Cole</div>
-            <div class="date">2 hours ago</div>
+            <div class="date"> When? 12/8/21</div>
+            <div class="time">Time? 12:00pm</div>
             <div class="post-content"></div>
-            <button class="no">X</button>
-            <a routerLink="/rsvp">Rsvp</a>
-            <a routerLink="/feedback">Feedback</a>
+            <button class="RSVP" (click)="RSVP()"> RSVP </button> 
+            <a routerLink="/feedback"><i class="fas fa-comment-medical" id="feedback1"></i></a>
         </div>
-    </body>
+
+    </div>
+
+  
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/src/app/home-page/home-page.component.js"></script>
+
+
+</body>
+
+</html>
