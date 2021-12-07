@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
     if(users.hasOwnProperty(username)){
       if(users[username] == password){
         console.log("Login Successful!")
-        this.router.navigateByUrl("/home")
+        this.router.navigateByUrl("/viewpost")
       }
     }
     else{

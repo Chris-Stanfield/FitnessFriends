@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewPostComponent implements OnInit {
 
+
+  RSVP(){
+    window.alert("Successfully RSVPd for this event!")
+  }
+
   constructor() { }
 
   ngOnInit(): void {
